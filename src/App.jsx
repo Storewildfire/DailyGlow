@@ -179,7 +179,7 @@ function App() {
                 <div className="flex gap-4 mt-4 text-sm">
                     <Link to="/privacy-policy" className="hover:text-purple-600">Privacy Policy</Link>
                     <a href="#" className="hover:text-purple-600">Terms of Service</a>
-                    <a href="mailto:support@dailyglowapp.com" className="hover:text-purple-600">Contact Support</a>
+                    <a href="mailto:storewildfire.in@gmail.com" className="hover:text-purple-600">Contact Support</a>
                 </div>
             </footer>
         </div>

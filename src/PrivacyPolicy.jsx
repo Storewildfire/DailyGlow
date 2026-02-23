@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
                         </p>
                         <div className="bg-white/50 p-6 rounded-2xl border border-purple-100 mt-4">
                             <p><strong>Developer:</strong> Amar (DailyGlow Studio)</p>
-                            <p><strong>Email:</strong> <a href="mailto:support@example.com" className="text-purple-600 hover:underline">support@example.com</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:storewildfire.in@gmail.com" className="text-purple-600 hover:underline">storewildfire.in@gmail.com</a></p>
                         </div>
                     </div>
                 </motion.div>
