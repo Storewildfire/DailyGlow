@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { CheckCircle2, Heart, Award, Sparkles, Smartphone, ShieldCheck, Download } from 'lucide-react';
 
 const FeatureCard = ({ icon: Icon, title, description, delay }) => (
@@ -176,7 +177,7 @@ function App() {
                 </div>
                 <p>&copy; 2026 DailyGlow Studio. All rights reserved.</p>
                 <div className="flex gap-4 mt-4 text-sm">
-                    <a href="#" className="hover:text-purple-600">Privacy Policy</a>
+                    <Link to="/privacy-policy" className="hover:text-purple-600">Privacy Policy</Link>
                     <a href="#" className="hover:text-purple-600">Terms of Service</a>
                     <a href="mailto:support@dailyglowapp.com" className="hover:text-purple-600">Contact Support</a>
                 </div>
