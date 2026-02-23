@@ -1,7 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, Heart, Award, Sparkles, Smartphone, ShieldCheck, Download } from 'lucide-react';
+import { CheckCircle2, Heart, Award, Sparkles, Smartphone, ShieldCheck, Download, Star } from 'lucide-react';
+
+const ReviewCard = ({ name, role, content, delay }) => (
+    <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay, duration: 0.5 }}
+        className="glass-card p-8 flex flex-col gap-4"
+    >
+        <div className="flex gap-1 text-yellow-400">
+            {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="currentColor" />)}
+        </div>
+        <p className="text-gray-700 italic flex-1">"{content}"</p>
+        <div>
+            <p className="font-bold text-gray-900">{name}</p>
+            <p className="text-sm text-gray-500">{role}</p>
+        </div>
+    </motion.div>
+);
 
 const FeatureCard = ({ icon: Icon, title, description, delay }) => (
     <motion.div
@@ -158,14 +177,48 @@ function App() {
                 </div>
             </section>
 
+            {/* Reviews Section */}
+            <section id="reviews" className="w-full max-w-6xl mx-auto px-6 py-20 z-10">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Loved by our growing community.</h2>
+                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">See how DailyGlow is helping users build better habits and improve their daily routines.</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <ReviewCard
+                        delay={0.1}
+                        name="Sarah J."
+                        role="Student"
+                        content="This app has completely changed how I track my daily water and meditation goals. The glass design is gorgeous!"
+                    />
+                    <ReviewCard
+                        delay={0.2}
+                        name="Mike T."
+                        role="Freelancer"
+                        content="I love that my data is stored locally. It's so rare to find an app that respects privacy while still offering great analytics."
+                    />
+                    <ReviewCard
+                        delay={0.3}
+                        name="Emily R."
+                        role="Designer"
+                        content="The aesthetic is premium. Logging my daily mood with emojis is the favorite part of my morning routine now."
+                    />
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section id="download" className="w-full mt-10 z-10 p-6">
                 <div className="max-w-4xl mx-auto glass-card p-12 text-center relative overflow-hidden bg-gradient-to-br from-purple-600/10 to-pink-600/10">
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Ready to glow up your routine?</h2>
                     <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">Join the community of users building better habits and practicing daily self-care with DailyGlow.</p>
-                    <a href="#" className="inline-block bg-gray-900 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:-translate-y-1 transition-transform">
-                        Get DailyGlow for Android
-                    </a>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="#" className="inline-block bg-gray-900 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:-translate-y-1 transition-transform">
+                            Get DailyGlow for Android
+                        </a>
+                        <a href="mailto:storewildfire.in@gmail.com?subject=App%20Review:%20DailyGlow" className="glass-button px-8 py-4 rounded-full font-semibold flex items-center justify-center text-purple-600">
+                            <Star size={20} className="mr-2" /> Write a Review
+                        </a>
+                    </div>
                 </div>
             </section>
 
