@@ -177,35 +177,6 @@ function App() {
                 </div>
             </section>
 
-            {/* Reviews Section */}
-            <section id="reviews" className="w-full max-w-6xl mx-auto px-6 py-20 z-10">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Loved by our growing community.</h2>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">See how DailyGlow is helping users build better habits and improve their daily routines.</p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    <ReviewCard
-                        delay={0.1}
-                        name="Sarah J."
-                        role="Student"
-                        content="This app has completely changed how I track my daily water and meditation goals. The glass design is gorgeous!"
-                    />
-                    <ReviewCard
-                        delay={0.2}
-                        name="Mike T."
-                        role="Freelancer"
-                        content="I love that my data is stored locally. It's so rare to find an app that respects privacy while still offering great analytics."
-                    />
-                    <ReviewCard
-                        delay={0.3}
-                        name="Emily R."
-                        role="Designer"
-                        content="The aesthetic is premium. Logging my daily mood with emojis is the favorite part of my morning routine now."
-                    />
-                </div>
-            </section>
-
             {/* CTA Section */}
             <section id="download" className="w-full mt-10 z-10 p-6">
                 <div className="max-w-4xl mx-auto glass-card p-12 text-center relative overflow-hidden bg-gradient-to-br from-purple-600/10 to-pink-600/10">
