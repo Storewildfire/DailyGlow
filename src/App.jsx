@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, Heart, Award, Sparkles, Smartphone, ShieldCheck, Download, Star } from 'lucide-react';
+import indusQrCode from '../Indus-marketing-resources-English/QR-code.png';
 
 const ReviewCard = ({ name, role, content, delay }) => (
     <motion.div
@@ -177,18 +178,34 @@ function App() {
                 </div>
             </section>
 
-            {/* CTA Section */}
+            {/* Download Section */}
             <section id="download" className="w-full mt-10 z-10 p-6">
-                <div className="max-w-4xl mx-auto glass-card p-12 text-center relative overflow-hidden bg-gradient-to-br from-purple-600/10 to-pink-600/10">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Ready to glow up your routine?</h2>
-                    <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">Join the community of users building better habits and practicing daily self-care with DailyGlow.</p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <a href="#" className="inline-block bg-gray-900 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:-translate-y-1 transition-transform">
-                            Get DailyGlow for Android
-                        </a>
-                        <a href="mailto:storewildfire.in@gmail.com?subject=App%20Review:%20DailyGlow" className="glass-button px-8 py-4 rounded-full font-semibold flex items-center justify-center text-purple-600">
-                            <Star size={20} className="mr-2" /> Write a Review
-                        </a>
+                <div className="max-w-4xl mx-auto glass-card p-12 relative overflow-hidden bg-gradient-to-br from-purple-600/10 to-pink-600/10">
+                    <div className="flex flex-col md:flex-row items-center gap-10">
+                        {/* Left: Text & Buttons */}
+                        <div className="flex-1 text-center md:text-left">
+                            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Download DailyGlow</h2>
+                            <p className="text-lg text-gray-600 mb-8 max-w-xl">Available now on the Indus App Store. Scan the QR code or tap the button below to download.</p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
+                                <a href="#" className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-3.5 rounded-2xl font-semibold shadow-xl hover:-translate-y-1 transition-transform">
+                                    <Download size={22} />
+                                    <div className="text-left">
+                                        <div className="text-[10px] uppercase tracking-wider opacity-70">Get it on</div>
+                                        <div className="text-base font-bold -mt-0.5">Indus App Store</div>
+                                    </div>
+                                </a>
+                                <a href="mailto:storewildfire.in@gmail.com?subject=App%20Review:%20DailyGlow" className="glass-button px-6 py-3.5 rounded-2xl font-semibold flex items-center justify-center text-purple-600">
+                                    <Star size={20} className="mr-2" /> Write a Review
+                                </a>
+                            </div>
+                        </div>
+                        {/* Right: QR Code */}
+                        <div className="flex flex-col items-center gap-3">
+                            <div className="bg-white p-3 rounded-2xl shadow-lg">
+                                <img src={indusQrCode} alt="Download DailyGlow on Indus App Store" className="w-40 h-40 md:w-48 md:h-48" />
+                            </div>
+                            <p className="text-sm text-gray-500 font-medium">Scan to download</p>
+                        </div>
                     </div>
                 </div>
             </section>
