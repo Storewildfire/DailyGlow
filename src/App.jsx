@@ -50,7 +50,7 @@ function App() {
                     </div>
                     <span className="text-2xl font-bold tracking-tight text-gray-800">Daily<span className="text-gradient">Glow</span></span>
                 </div>
-                <a href="#download" className="glass-button px-6 py-2.5 rounded-full font-medium text-purple-600 hover:shadow-lg hover:-translate-y-0.5 z-10">
+                <a href="https://www.indusappstore.com/apps/lifestyle/dailyglow/com.dailyglow.daily_glow/?page=details&id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="glass-button px-6 py-2.5 rounded-full font-medium text-purple-600 hover:shadow-lg hover:-translate-y-0.5 z-10">
                     Get the App
                 </a>
             </nav>
@@ -79,7 +79,7 @@ function App() {
                         Transform your life one day at a time with a beautiful, locally-stored self-care application designed for your privacy and peace of mind.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
-                        <a href="#download" className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                        <a href="https://www.indusappstore.com/apps/lifestyle/dailyglow/com.dailyglow.daily_glow/?page=details&id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors shadow-xl hover:shadow-2xl hover:-translate-y-1">
                             <Download size={20} /> Download Free
                         </a>
                         <a href="#features" className="glass-button px-8 py-4 rounded-full font-semibold flex items-center justify-center text-gray-800">
