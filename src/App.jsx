@@ -187,7 +187,7 @@ function App() {
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Download DailyGlow</h2>
                             <p className="text-lg text-gray-600 mb-8 max-w-xl">Available now on the Indus App Store. Scan the QR code or tap the button below to download.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
-                                <a href="#" className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-3.5 rounded-2xl font-semibold shadow-xl hover:-translate-y-1 transition-transform">
+                                <a href="https://www.indusappstore.com/apps/lifestyle/dailyglow/com.dailyglow.daily_glow/?page=details&id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-3.5 rounded-2xl font-semibold shadow-xl hover:-translate-y-1 transition-transform">
                                     <Download size={22} />
                                     <div className="text-left">
                                         <div className="text-[10px] uppercase tracking-wider opacity-70">Get it on</div>
