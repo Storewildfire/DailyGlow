@@ -52,7 +52,7 @@ function App() {
                 <div className="flex items-center gap-4">
                     <Link to="/privacy-policy" className="text-sm text-gray-500 hover:text-orange-500 transition-colors hidden sm:block">Privacy</Link>
                     <Link to="/terms" className="text-sm text-gray-500 hover:text-orange-500 transition-colors hidden sm:block">Terms</Link>
-                    <a href="https://play.google.com/store/apps/details?id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="glass-button px-6 py-2.5 rounded-full font-medium text-orange-500 hover:shadow-lg hover:-translate-y-0.5 z-10">
+                    <a href="#download" className="glass-button px-6 py-2.5 rounded-full font-medium text-orange-500 hover:shadow-lg hover:-translate-y-0.5 z-10">
                         Get the App
                     </a>
                 </div>
@@ -83,11 +83,13 @@ function App() {
                         Build life-changing routines, track mood & water intake, monitor sleep, practice gratitude — all in one beautiful app with cloud sync.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
-                        <a href="https://play.google.com/store/apps/details?id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                            <Download size={20} /> Download Free
+                        <a href="https://play.google.com/store/apps/details?id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="bg-gray-900 text-white px-7 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                            <Download size={18} />
+                            <div className="text-left"><div className="text-[9px] uppercase tracking-wider opacity-70">Get it on</div><div className="text-sm font-bold -mt-0.5">Google Play</div></div>
                         </a>
-                        <a href="#features" className="glass-button px-8 py-4 rounded-full font-semibold flex items-center justify-center text-gray-800">
-                            Explore Features
+                        <a href="https://www.indusappstore.com/apps/lifestyle/dailyglow/com.dailyglow.daily_glow/?page=details&id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="glass-button px-7 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 text-gray-800 hover:-translate-y-1">
+                            <Download size={18} />
+                            <div className="text-left"><div className="text-[9px] uppercase tracking-wider opacity-50">Get it on</div><div className="text-sm font-bold -mt-0.5">Indus App Store</div></div>
                         </a>
                     </div>
                 </motion.div>
@@ -268,7 +270,7 @@ function App() {
                             <img src="/logo.png" alt="DailyGlow" className="w-full h-full object-cover" />
                         </div>
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Start Your Wellness Journey</h2>
-                        <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">Download DailyGlow free on Google Play Store and take the first step toward a healthier, happier you.</p>
+                        <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">Download DailyGlow free and take the first step toward a healthier, happier you.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a href="https://play.google.com/store/apps/details?id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:-translate-y-1 transition-transform">
                                 <Download size={22} />
@@ -277,10 +279,17 @@ function App() {
                                     <div className="text-base font-bold -mt-0.5">Google Play</div>
                                 </div>
                             </a>
-                            <a href="mailto:storewildfire.in@gmail.com?subject=DailyGlow%20Support" className="glass-button px-8 py-4 rounded-2xl font-semibold flex items-center justify-center text-orange-500">
-                                <Star size={20} className="mr-2" /> Contact Us
+                            <a href="https://www.indusappstore.com/apps/lifestyle/dailyglow/com.dailyglow.daily_glow/?page=details&id=com.dailyglow.daily_glow" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:-translate-y-1 transition-transform">
+                                <Download size={22} />
+                                <div className="text-left">
+                                    <div className="text-[10px] uppercase tracking-wider opacity-70">Get it on</div>
+                                    <div className="text-base font-bold -mt-0.5">Indus App Store</div>
+                                </div>
                             </a>
                         </div>
+                        <a href="mailto:storewildfire.in@gmail.com?subject=DailyGlow%20Support" className="inline-flex items-center gap-2 mt-6 text-orange-500 hover:text-orange-600 font-medium text-sm transition-colors">
+                            <Star size={16} /> Contact Us
+                        </a>
                     </div>
                 </div>
             </section>
